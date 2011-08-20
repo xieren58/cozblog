@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* 
+Print overrides stylesheet for StuartEllis.eu 
+
+Copyright Stuart Ellis, 2011.
+
+*/
+
+nav, aside, #footer {
+    display: none;
+}

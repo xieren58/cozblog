@@ -1,0 +1,14 @@
+<% content_for :css do %>
+  <link rel="stylesheet" href="/javascripts/kindeditor/themes/default/default.css" />
+<% end %>
+<% content_for :js do %>
+<%= javascript_include_tag "kindeditor/kindeditor.js", 
+	"kindeditor/lang/zh_CN.js", "kindeditor/kindeditor-init.js" %>
+<% end %>
+
+<h1>Editing post</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @post %> |
+<%= link_to 'Back', posts_path %>

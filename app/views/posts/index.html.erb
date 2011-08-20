@@ -1,0 +1,38 @@
+<h1>Home</h1>
+
+<ul class="articles-list">
+
+<% @posts.each do |post| %>
+  <li>
+    <%= link_to post.title, post %>&nbsp;
+    <span class="quiet small">(Updated: <%= post.updated_at.strftime("%B %d, %Y") %>)</span>
+     
+
+    <% if user_signed_in? %>
+    &nbsp;
+    <%= link_to 'Edit', edit_post_path(post) %> |
+    <%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
+    <% end %>
+  </li>
+<% end %>
+</ul>
+
+<br />
+<br />
+<%= paginate @posts %>
+
+<% content_for :sidebar do %>
+  <h2>Tags</h2>
+    <ul>
+      <% tag_cloud(@tags, %w(css1 css2 css3 css4)) do |tag, css_class| %>
+      <li><%= link_to tag.name, tags_path(:tag => tag.name), :class => css_class %>(<%= tag.count %>)</li>
+     <% end %>
+    </ul>
+<% end %>
+
+<% if user_signed_in? %>
+<br />
+<%= link_to 'New Post', new_post_path %> | 
+<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+<% end %>
+

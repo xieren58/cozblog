@@ -1,0 +1,20 @@
+<% content_for :title do %>
+About -- 
+<% end %>
+
+<h1>About</h1>
+
+
+<p>cz.chen: python, ruby, mac...</p>
+<p>Aug. 2010 - Present, &nbsp;<a href="http://www.r-pac.com/main.html" target="_blank">www.r-pac.com</a>(ShenZhen, China): python programmer</p>
+<p>Email: xieren58 at gmail dot com</p>
+
+
+<% content_for :sidebar do %>
+  <h2>Tags</h2>
+    <ul>
+      <% tag_cloud(@tags, %w(css1 css2 css3 css4)) do |tag, css_class| %>
+      <li><%= link_to tag.name, tags_path(:tag => tag.name), :class => css_class %>(<%= tag.count %>)</li>
+     <% end %>
+    </ul>
+<% end %>

@@ -1,0 +1,107 @@
+/* 
+Typography stylesheet for StuartEllis.eu 
+
+Copyright Stuart Ellis, 2011.
+
+*/
+
+body {
+    font-size: 75%;
+    line-height: 1.5em;
+    font-family: Verdana, sans-serif;
+    background-color: #E8E8E8;
+}
+
+p {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em; 
+}
+/*
+pre code {
+    font-family: Monaco,'Courier New','Terminal',monospace;
+    font-size: 1.1667em;
+    line-height: 1.286em;
+    margin-top: 1.286em;
+    margin-bottom: 1.286em;
+}*/
+code, pre { font: 17px/1.4 "Inconsolata", "andale mono", "lucida console", monospace; }
+
+h1 {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 1.1667em;
+    line-height: 1.286em;
+    margin-top: 1.286em;
+    margin-bottom: 1.286em;
+}
+
+h3 {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+article ol, article ul {
+    padding-left: 1em;
+}
+
+aside ul {
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-left: 1em;
+}
+
+aside p {
+    font-size: 0.8333em;
+    line-height: 1.8em;
+}
+
+header p {
+    font-size: 2em;
+    line-height: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: Georgia, serif;
+}
+
+nav ol, nav ul {
+    font-size: 1.1667em;
+    line-height: 1.286em;
+}
+
+nav li {
+    margin-right: 3em;
+}
+
+nav p {
+    font-size: 0.8333em;
+    line-height: 1.8em;
+}
+
+/* Classes */
+
+.toc {
+    font-size: 1.1667em;
+    line-height: 1.5712em;
+    margin-top: 1.286em;
+    margin-bottom: 1.286em;
+    padding-left: 3em;
+}
+
+.articles-list {
+    font-size: 1.1667em;
+    line-height: 1.7143em;
+    margin-top: 1.286em;
+    margin-bottom: 1.286em;
+    padding-left: 1em;
+}
+
+.small {
+    font-size: 0.6em;
+}

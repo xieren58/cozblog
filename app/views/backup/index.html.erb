@@ -1,0 +1,23 @@
+<h1>Backup#index</h1>
+<p>APP_ROOT: <%= Rails.root %></p>
+<hr />
+
+<ul class="articles-list">
+<li>
+	<%= link_to 'List Backups', backup_path(:cmd => 'list_backups') %>
+</li>
+<li>
+	<%= link_to 'Backup App', backup_path(:cmd => 'backup_app'), :confirm => "Are you sure 'Backup App'?", :method => :get %>
+	| <%= raw @backup_app_link %>
+</li>
+<li>
+	<%= link_to 'Backup Uploads', backup_path(:cmd => 'backup_uploads'), :confirm => "Are you sure 'Backup Uploads'?", :method => :get %>
+	| <%= raw @backup_uploads_link %>
+</li>
+<li>
+	<%= link_to 'Clear Backups', backup_path(:cmd => 'clear_backups'), :confirm => "Are you sure 'Clear Backups'?", :method => :get %>
+</li>
+</ul>
+
+<hr />
+<pre><%= @shell %></pre>

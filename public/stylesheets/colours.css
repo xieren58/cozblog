@@ -1,0 +1,55 @@
+/* 
+Colours stylesheet for StuartEllis.eu
+
+Copyright Stuart Ellis, 2011.
+
+*/
+
+/* Page sections */
+
+nav {
+  border-top:     1px solid #BDD1AE;
+  border-bottom:  1px solid #BDD1AE;
+}
+
+#footer {
+  border-top:     1px solid #BDD1AE;
+}
+
+/* Elements */
+
+/* Headings
+ * --------------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6 { color: #699124; }
+
+/* Text Elements
+ * --------------------------------------------------------------------- */
+a                 { color: #699124; }
+a:visited         { color: #6F8052; }
+a:hover           { color: #000000; }
+blockquote        { color: #404624; }
+
+hr {
+  background: #BDD1AE;
+  color:      #BDD1AE;
+}
+
+blockquote {
+    background-color: #F2FAE1;
+}
+
+/* Tables
+ * --------------------------------------------------------------------- */
+table {
+  border-top:     1px solid #BDD1AE;
+  border-left:    1px solid #BDD1AE;
+}
+th,td {
+  border-bottom:  1px solid #BDD1AE;
+  border-right:   1px solid #BDD1AE;
+}
+
+/* Default Classes
+ * --------------------------------------------------------------------- */
+.quiet { color: #404624; }
+.alt    { color: #404624; }

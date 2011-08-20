@@ -1,0 +1,65 @@
+/* 
+Layout stylesheet for StuartEllis.eu 
+
+Copyright Stuart Ellis, 2011.
+
+*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {
+    margin:0;
+    padding:0;
+}
+
+/* Divisions */
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto 0;
+    position: relative;
+}
+
+/* HTML5 elements */
+
+header {
+    float: left;
+    width: 930px;
+}
+
+nav {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    width: 930px;
+}
+
+nav ul {
+    margin: 0.75em 0.75em 0.75em 0;
+	list-style-type:none;	
+}
+
+nav li {
+	display:inline;
+}
+
+article {
+    float: left;
+    margin-right: 1em;
+    min-height: 30em;
+    padding-bottom: 2em;
+    width: 800px;
+}
+
+aside {
+    float: left;
+    padding-left: 2em;
+    width: 100px;
+}
+
+#footer{
+    clear: both;
+    width: 960px;
+}
+
+blockquote p {
+    padding: 20px;
+}
