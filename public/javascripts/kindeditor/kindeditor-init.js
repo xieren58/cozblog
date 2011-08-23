@@ -1,19 +1,10 @@
-/*
-KE.show({
-  id : 'kindeditor_id',
-  width: "100%",
-  allowFileManager: true,
-	imageUploadJson : '/kindeditor/upload',
-	fileManagerJson: '/kindeditor/filemanager'
-});
-*/
-var editor;
 KindEditor.ready(function(K) {
-	editor = K.create('#kindeditor_id', {
+	K.create('#kindeditor_id', {
 		width: "100%",
 		allowFileManager: true,
-        imageUploadJson: '/kindeditor/upload',
-		fileManagerJson: '/kindeditor/filemanager'
-     });
+		langType: "zh_CN",
+		uploadJson: "/kindeditor/upload",
+		fileManagerJson: '/kindeditor/filemanager',
+		script         : '#{images_path(:auth_token => current_user.authentication_token, :format => :json)}'
+	});
 });
-

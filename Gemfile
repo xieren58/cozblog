@@ -11,8 +11,8 @@ gem 'mysql2', '< 0.3'
 gem 'kaminari'               # paginate
 gem 'acts-as-taggable-on'    # tags
 gem 'devise'                 # authentication 
-gem "carrierwave", "~> 0.5.4"
-gem "rails_kindeditor", '> 0.0.2'
+gem "carrierwave"
+gem "rails_kindeditor", '~> 0.1.0'
 gem 'yaml_db'
 gem 'jquery-rails'
 #############

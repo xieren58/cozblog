@@ -31,6 +31,7 @@ GEM
     acts-as-taggable-on (2.0.6)
     arel (2.0.10)
     bcrypt-ruby (2.1.4)
+    bcrypt-ruby (2.1.4-x86-mingw32)
     builder (2.1.2)
     carrierwave (0.5.6)
       activesupport (~> 3.0)
@@ -68,8 +69,8 @@ GEM
       activesupport (= 3.0.9)
       bundler (~> 1.0)
       railties (= 3.0.9)
-    rails_kindeditor (0.0.3)
-      carrierwave (~> 0.5.4)
+    rails_kindeditor (0.1.0)
+      carrierwave
     railties (3.0.9)
       actionpack (= 3.0.9)
       activesupport (= 3.0.9)
@@ -93,11 +94,11 @@ PLATFORMS
 
 DEPENDENCIES
   acts-as-taggable-on
-  carrierwave (~> 0.5.4)
+  carrierwave
   devise
   jquery-rails
   kaminari
   mysql2 (< 0.3)
   rails (= 3.0.9)
-  rails_kindeditor (> 0.0.2)
+  rails_kindeditor (~> 0.1.0)
   yaml_db

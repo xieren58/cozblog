@@ -130,7 +130,7 @@ KindEditor.plugin('image', function(K) {
 			var uploadbutton = K.uploadbutton({
 				button : K('.ke-upload-button', div)[0],
 				fieldName : 'imgFile',
-				url : uploadJson + '?dir=image',
+				url : uploadJson + '?dir=image' + '&authenticity_token=' + $('input[name="authenticity_token"]').val(),
 				afterUpload : function(data) {
 					if (data.error === 0) {
 						var width = widthBox.val(),

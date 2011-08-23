@@ -1,10 +1,4 @@
-<% content_for :css do %>
-  <link rel="stylesheet" href="/javascripts/kindeditor/themes/default/default.css" />
-<% end %>
-<% content_for :js do %>
-<%= javascript_include_tag "kindeditor/kindeditor.js", 
-	"kindeditor/lang/zh_CN.js", "kindeditor/kindeditor-init.js" %>
-<% end %>
+<%= include_kindeditor_if_needed :lang => :zh_CN, :cache => true %>
 
 <h1>Editing post</h1>
 

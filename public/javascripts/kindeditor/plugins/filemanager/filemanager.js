@@ -168,10 +168,8 @@ KindEditor.plugin('filemanager', function(K) {
 						K(this).removeClass('ke-on');
 					});
 				div.append(photoDiv);
-				// var fileUrl = result.current_url + data.filename,
-					// iconUrl = data.is_dir ? imgPath + 'folder-64.gif' : (data.is_photo ? fileUrl : imgPath + 'file-64.gif');
-				var fileUrl = data.filename;
-				var iconUrl = fileUrl;
+				var fileUrl = result.current_url + data.filename,
+					iconUrl = data.is_dir ? imgPath + 'folder-64.gif' : (data.is_photo ? fileUrl : imgPath + 'file-64.gif');
 				var img = K('<img src="' + iconUrl + '" width="80" height="80" alt="' + data.filename + '" />');
 				if (!data.is_dir || data.has_file) {
 					photoDiv.css('cursor', 'pointer');

@@ -24,7 +24,10 @@ pre code {
     margin-top: 1.286em;
     margin-bottom: 1.286em;
 }*/
+/*
 code, pre { font: 17px/1.4 "Inconsolata", "andale mono", "lucida console", monospace; }
+*/
+code, pre { font: 1.1667em "Inconsolata", "andale mono", "lucida console", monospace; }
 
 h1 {
     font-size: 1.5em;
