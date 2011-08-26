@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   
   # GET /posts
   def index
-    @posts = Post.order('id DESC').page(params[:page])
+    @posts = Post.page(params[:page])
     @tags = tag_cloud
     
     respond_to do |format|
@@ -64,7 +64,7 @@ class PostsController < ApplicationController
   
   def tag
     @tag = params[:tag]
-    @posts = Post.tagged_with(params[:tag]).order('id DESC').page(params[:page])
+    @posts = Post.tagged_with(params[:tag]).page(params[:page])
     @tags = tag_cloud
   end
   
