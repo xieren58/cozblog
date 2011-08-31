@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_filter :authenticate_user!, :only => [:new, :edit, :create, :destroy]
+  caches_action :index
   include_kindeditor :only => [:new, :edit]
   
   # GET /posts
